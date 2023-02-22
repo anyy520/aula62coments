@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="pt">
+<head>
+  <title>Exemplo de Bootstrap</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">  <!--css-- --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!--js-- -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script><!---Dois links são utilizados para as funcionalidades 
+    JavaScript e um link para as funcionalidades CSS.- -->
+</head>
+<body>
+
+<div class="container"><!----Em Bootstrap, qualquer código que escrevermos virá dentro da class container div. 
+ O container adicionará margin-left, margin-right, padding-right, e padding-left a todos os elementos dentro dele. -->
+
+    <section id="app"><!----criei uma sessao -->
+        <h1>Aplicativos</h1><!----um titulo -->
+        <div class="line"></div><!----uma class para estilizar se eu quiser -->
+        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/rAdox8pJchSWf-naEMp7xssKmnljmPBMOhzIIELh884/embed"></iframe>
+        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/0A6kG71zyim7O5-ZkHKXJ_kZAHb2nPZUUi-34A5JCIc/embed"></iframe>
+    </section><!---- dois iframe do cod.com   lembrando que aqui coloquei os aplicativos-->
+
+
+
+<h2>Clique no jogo desejado para comecar!</h2><!---um titulo antes do carrossel- -->
+
+<h5>Esses jogos foram criados no laboratorio de jogos. Clique no jogo para jogar</h5><!----outro titulo menor -->
+
+<div id="myCarousel" class="carousel slide" ><!--criei uma id com class Nesse código, fornecemos uma id para identificação da apresentação.
+A class "carousel slide" ajuda a adicionar uma transição CSS e efeito animado.
+ Faz com que os itens se movam quando os botões 'próximo' ou 'anterior' são pressionados.-->
+ 
+   <center><!--Para alinhas as imagens ao centro, escreveremos tudo com a etiqueta center.-- -->
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner"><!--- ->Forneça class="carousel-inner" à div, isso significa que todo o conteúdo dos slides estarão dentro dessa div.   - -->
+      <div class="item active"><!----Em seguida, adicionamos todas as imagens e links da apresentação, um a um, dentro da div class="carousel-inner".  -->
+
+        <a href="https://studio.code.org/projects/gamelab/Sdt_OgR8VajkwZ9t45UeVtzMLGiyqhNFJexB9eCe480" target="_blank">
+          <img src="game1.png">
+        </a>
+        <p>Jogo de Corrida de Carro</p><!----paragrafo -->
+      </div>
+
+      <div class="item"><!---não aparecerá quando a página for carregada. Isso acontece por querermos que, apenas, o primeiro slide seja carregado e exibido.
+        - -->
+        <a href="https://studio.code.org/projects/gamelab/N25kriFEAiBTZwfbYpDjc_qryNjSBhYW-3fOuYRt_SI" target="_blank">
+          <img src="game2.png">
+        </a>
+          <p>Explorando o Espaço</p><!---- -->
+        </div>
+      
+      <div class="item"><!---- -->
+        <a href="https://studio.code.org/projects/playlab/Xoq31TZJRl0W9K95JthlADu6tbI1xGTsVHpOvYsNtuE" target="_blank">
+          <img src="game3.png">
+        </a>
+          <p>Pássaro quer uma torta</p><!---- -->
+        </div>
+      
+      <div class="item">
+        <a href="https://studio.code.org/projects/playlab/Xoq31TZJRl0W9K95JthlADu6tbI1xGTsVHpOvYsNtuE" target="_blank">
+          <img src="game4.png">
+        </a>
+          <p>Verificador de Senha</p>
+        </div>
+      
+    </div>
+
+    <!-- Left and right controls --><!---contolando direita e esquerda- Adicionaremos duas etiquetas anchor respectivamente para os botões 'próximo' e 'anterior'. -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><!--carousel-control" fornece o estilo à etiqueta anchor.
+      --><!---- href" é "#myCarousel". E "href" significa que passamos a id da apresentação para referência, para que essa etiqueta anchor saiba qual janela referir quando pressionada-->
+      <!----"data-slide" é "prev". Essa fornece a funcionalidade de obter o slide anterior. Faremos o mesmo para o botão 'Próximo' -->
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+
+  </center>
+  </div>
+
+</div>
+
+</body>
+</html>
